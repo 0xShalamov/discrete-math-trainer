@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Discrete Math Trainer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="side">
+    <div class="lvlbox">
+      <div class="lvlname" id="lvlname">Абитуриент</div>
+      <div class="lvlxp" id="lvlxp">0 / 120 XP</div>
+      <div class="bar sm"><div id="xpbar"></div></div>
+    </div>
+    <nav class="nav" id="nav">
+      <button data-v="study">Учить</button>
+      <button data-v="cards">Карточки</button>
+      <button data-v="quiz">Викторина</button>
+      <button data-v="sprint">Спринт</button>
+      <button data-v="boss">Босс-экзамен</button>
+      <button data-v="prog">Прогресс</button>
+    </nav>
+    <div class="lang" id="lang">
+      <button data-lang="ru" class="active">RU</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <div class="sidehint mono" id="hint">теория: 0/60</div>
+  </aside>
+  <main class="main">
+    <div class="topbar"><h1 id="title">Учить: фаза подготовки</h1><div class="streak" id="streak"></div></div>
+    <div class="view" id="view"></div>
+  </main>
+</div>
+<div id="toasts"></div>
+<div id="modal"><div class="mbox" id="mbox"></div></div>
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
